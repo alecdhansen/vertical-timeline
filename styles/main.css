@@ -8,16 +8,16 @@ body {
   background-color: var(--backgroundgray);
 }
 .timeline {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 10px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
 }
-.column1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-top: 50px;
+ul {
+  width: 100%;
+  padding: 0;
 }
-.c1box1 {
-  margin-bottom: auto 50px;
+li {
+  border: solid;
 }
