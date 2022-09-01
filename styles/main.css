@@ -148,7 +148,7 @@ p {
   top: 0;
   height: 50%;
   width: 100%;
-  background-image: url("/Users/alecdhansen/Documents/code/homework/vertical-timeline/images/wilder.png");
+  background-image: url("../images/wilder.png");
 }
 .picture {
   width: 100%;
