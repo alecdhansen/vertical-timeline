@@ -41,6 +41,39 @@ ul {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.timeline-event:nth-child(odd)::before {
+  font-family: "FontAwesome";
+  content: "\f303";
+  position: absolute;
+  height: 25px;
+  border-radius: 50%;
+  width: 25px;
+  padding-left: 2.5px;
+  padding-top: 2px;
+  color: var(--timelineline);
+  background-color: var(--timelineline);
+  border: 2px solid var(--timelineline);
+  color: var(--backgroundwhitish);
+  top: 15%;
+  left: 111.3%;
+}
+.timeline-event:nth-child(even)::after {
+  font-family: "FontAwesome";
+  content: "\f303";
+  position: absolute;
+  height: 25px;
+  border-radius: 50%;
+  width: 25px;
+  padding-left: 2.5px;
+  padding-top: 2px;
+  color: var(--timelineline);
+  background-color: var(--timelineline);
+  border: 2px solid var(--timelineline);
+  color: var(--backgroundwhitish);
+  top: 13%;
+  left: -17%;
+}
 .timeline {
   display: flex;
   flex-direction: column;
