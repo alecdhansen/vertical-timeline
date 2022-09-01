@@ -46,7 +46,7 @@ ul {
   flex-direction: column;
 }
 .timeline-event {
-  height: 200px;
+  height: 230px;
   background-color: var(--backgroundwhitish);
   width: 35%;
   position: relative;
@@ -81,7 +81,6 @@ ul {
 }
 
 .odd-datebox {
-  text-align: end;
   position: absolute;
   top: 0;
   right: 0;
@@ -92,7 +91,70 @@ ul {
   padding: 6px 8px;
   font-size: 12px;
 }
+.even-datebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--datebox);
+  border: none;
+  color: var(--backgroundwhitish);
+  font-family: "Roboto", sans-serif;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+.image-container {
+  position: absolute;
+  top: 0;
+  height: 50%;
+  width: 100%;
+  background-image: url("../images/wilder.png");
+}
+h2 {
+  margin: 0;
+  top: 4%;
+  left: 3%;
+  display: inline-block;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  color: var(--titlecolor);
+}
+.image-container > h2 {
+  top: 80%;
+  transform: translateY(-50%);
+  color: var(--backgroundwhitish);
+}
+p {
+  margin: 3px;
+  position: absolute;
+  top: 33%;
+  left: 3%;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  padding-right: 20px;
+  color: var(--titlecolor);
+}
+.timeline-event:nth-child(even) > p {
+  top: 52%;
+}
+.button {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  background-color: var(--button);
+  border: none;
+  border-radius: 3px;
+  padding: 6px 10px;
+  color: var(--backgroundwhitish);
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  transition-duration: 0.3s;
+}
 
+.button:hover {
+  background-color: #43a2e5;
+  color: #ffffff;
+  font-size: 12px;
+}
 @media (max-width: 1120px) {
   .timeline-event:nth-child(even) {
     margin-left: initial;
